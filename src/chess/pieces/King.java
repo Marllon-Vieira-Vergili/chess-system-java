@@ -28,7 +28,7 @@ private ChessMatch chessMatch;
 
     private boolean testRookCastling(Position position){
         ChessPiece p = (ChessPiece)getBoard().piece(position);
-        return p != null && p.instanceof Rook && p.getColor() == getColor() && p.getMoveCount() == 0;
+        return p != null && p instanceof Rook && p.getColor() == getColor() && p.getMoveCount() == 0;
     }
     @Override
     public boolean[][] possibleMoves() {
